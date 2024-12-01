@@ -74,11 +74,11 @@ export default function Navbar() {
             {isOpen ? (
               <span className="text-2xl">
                 <XIcon />
-              </span> // X Icon when open
+              </span>
             ) : (
               <span className="text-2xl">
                 <MenuIcon />
-              </span> // Hamburger Icon when closed
+              </span>
             )}
           </button>
         </div>

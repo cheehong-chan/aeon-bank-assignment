@@ -19,7 +19,7 @@ export default function Input({
 }: InputProps) {
   return (
     <div className="flex flex-col gap-y-2 mb-2">
-      <label htmlFor="email">{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input
         className="text-black p-2 rounded-md disabled:bg-gray-200"
         type={type}

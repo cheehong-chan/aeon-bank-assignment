@@ -38,7 +38,7 @@ export default function Page() {
       setLoading(true);
       setError(null);
       const res = await getSecureWord(data.username);
-      const secureWord = res.data.secureWord || "";
+      const secureWord = res?.data?.secureWord || "";
       setFormData({
         ...formData,
         secureWord: secureWord,

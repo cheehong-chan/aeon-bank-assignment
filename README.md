@@ -4,7 +4,7 @@ This is an assignment for Aeon Bank - Senior Frontend Engineer role
 2. Challenge 2: Login flow
 3. Challenge 3: Display transaction data in a table
 
-## Getting Started
+## Getting started with development
 
 First, install project dependencies
 
@@ -28,9 +28,11 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Run project in production
+## Build for production
 
-First build project
+### Build locally
+
+First, run the build
 
 ```bash
 npm run build
@@ -40,8 +42,22 @@ yarn build
 pnpm run build
 ```
 
-Then, run project
+Then, run the project
 
 ```bash
 pnpm start
+```
+
+### Build with docker
+
+First, build the docker image
+
+```bash
+docker build -t aeon-bank-app .
+```
+
+Then, run the docker image
+
+```bash
+docker run -p 3000:3000 aeon-bank-app
 ```
